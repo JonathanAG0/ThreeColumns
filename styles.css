@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Inter&family=Lexend+Deca&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --main-light-grey: hsl(0, 0%, 95%);
+    --main-trans-white: hsla(0, 0%, 100%, 0.75);
+    --main-orange: hsl(31, 77%, 52%);
+    --main-blue: hsl(184, 100%, 22%);
+    --main-green: hsl(179, 100%, 13%);
+}
+
+* {
+    border: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background: var(--main-light-grey);
+}
+
+.container-box {
+    color: var(--main-light-grey);
+    display: grid;
+    grid-template-columns: repeat(3, 287px);
+    padding: 10rem;
+    text-align: auto;
+}
+
+.sedans {
+    display: grid;
+    background: var(--main-orange);
+
+    width: 18rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+.suvs {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background: var(--main-blue);
+
+    width: 18rem;
+}
+.luxury {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background: var(--main-green);
+    width: 18rem;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+p{
+    color: var(--main-trans-white);
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 28px;
+}
+
+button {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-bottom: 6rem;
+    padding: 2%;
+    font-size: 1rem;
+    width: 10rem;
+    background: white;
+    border: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.luxury>button {
+    border: 15px 15px 15px 15px;
+    width: 10rem;
+    padding: 4%;
+}
+a {
+    text-decoration: none;
+}
+#sedans {
+    color: var(--main-orange);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+}
+#suvs {
+    color: var(--main-blue);
+    font-family: 'Lexend Deca', sans-serif;
+}
+#lux {
+    color: var(--main-green);
+    font-family: 'Lexend Deca', sans-serif;
+}
+/*can't fix*/
+@media screen and (max-width: 400px) {
+    .container-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        
+    }
+}
